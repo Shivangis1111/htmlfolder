@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>guess the number between 1 and 1000</h3>
+    <form>
+    <input type="number" value="input">
+</form><br>
+    <button onclick="check()">submit</button>
+    <script>
+        m=Math.floor(1000*Math.random())+1;
+        
+        function check(){
+            input=document.forms[0].elements[0].value;
+            if(input>m){
+                alert("high!! Try Again");
+                
+            }
+            else if(input<m){
+                alert("Low!! Try Again");
+               
+            }
+            else if(input==m){
+                alert("congo!!");
+               
+            }
+            else{
+                alert("error!!");
+            }
+            document.forms[0].elements[0].value=" ";
+        }
+       
+    </script>
+</body>
+</html>

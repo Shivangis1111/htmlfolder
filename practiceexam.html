@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return check()">
+        <label >Username:</label><br>
+        <input id="us"type="text" name="username"><br>
+        <div id="usp"></div><br>
+        <label  >Password:</label><br>
+        <input id="p" type="password" name="password"><br>
+        <div id="c1"></div><br>
+        <label >Confirm Password:</label><br>
+        <input  id="cp" type="password" name="cpassword"><br>
+        <div id="c2"></div><br><br>
+        <button type="submit">submit</button>
+    </form>
+         
+
+         <script>
+            function check(){
+               
+                username=document.getElementById('us').value;
+                password=document.getElementById('p').value;
+                cpassword=document.getElementById('cp').value;
+                //alert(username+" "+password+" "+cpassword);
+                Ru=/^[A-z]{5}[0-9]{5}$/;
+                Rp=/^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[\W_]){8,}$/;
+                
+                if(Ru.test(username)==false){
+                    document.getElementById('usp').innerHTML="incorrect username";
+                }
+                else if(Rp.text(password)==false){
+                    document.getElementById('c1').innerHTML="incorrect password";
+                }
+                else if(password!==cpassword){
+                    document.getElementById('c2').innerHTML="inavlid password";
+                }
+                else{
+                    return false;
+                }
+
+          }
+         </script>
+</body>
+</html>

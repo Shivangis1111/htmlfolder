@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 27</title>
+    <style>
+        div{
+            height:200px;
+            width:200px;
+            background-color: rgb(128, 217, 217);
+            padding:120px;
+            margin:120px;
+        }
+    </style>
+</head>
+<body>
+   <div id="clock"></div>
+   <script>
+    function clock(){
+        d=new Date();
+        hr=d.getHours();
+        min=d.getMinutes();
+        sec=d.getSeconds();
+        if(sec<=9){
+            ctime=hr+":"+min+":0"+sec;
+        }
+        else{
+            ctime=hr+":"+min+":"+sec;
+        }
+        x=document.getElementById("clock");
+        x.innerHTML=ctime;
+
+    }
+    setInterval(clock,1000);
+   </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+    <table border="2">
+        <tr>
+            <td><input type="number" class="input" placeholder="input" onchange="check()"></td>
+            <td><select onchange="check()">
+                <option value="K" >k</option>
+                <option value="F" >f</option>
+                <option value="C" >c</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><input type="number" class="output" placeholder="output"></td>
+            <td><select onchange="check()">
+                <option value="K" >k</option>
+                <option value="F" >f</option>
+                <option value="C" >c</option>
+            </select></td>
+        </tr>
+    </table>
+</form>
+<script>
+   function check(){
+    input=parseInt(document.forms[0].elements[0].value);
+    inop=document.forms[0].elements[1].value;
+    outop=document.forms[0].elements[3].value;
+    output=document.forms[0].elements[2].value;
+    if(inop=='C' && outop=='K'){
+                res=input+273;
+            }
+            else if(inop=='C' && outop=='F'){
+                res=(input*(1.8))+32;
+            }
+            else if(inop=='F' && outop=='C'){
+                res=(5*(input-32))/9;
+            }
+            else if(inop=='F' && outop=='K'){
+                res=((input-32)*(5/9.0))+273;
+            }
+            else if(inop=='K' && outop=='C'){
+                res=273-input;
+            }
+            else if(inop=='K' && outop=='F'){
+                res=((input-273)*(1.8))+32;
+            }
+            else{
+                res=input;
+            }
+            document.forms[0].elements[2].value=res;
+   }
+</script>
+</body>
+</html>

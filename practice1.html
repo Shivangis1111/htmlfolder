@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            text-align: center;
+            font-weight: bold;
+        }
+        .id{
+            background-color: blue;
+            height:500px;
+            width:650px;
+            padding:30px;
+            /* margin:30px; */
+        }
+        .c1{
+            float:left;
+            height:400px;
+            width:240px;
+            background-color: green;
+            border:solid 2px black;
+            align-items: center;
+            margin-right: 20px;
+            text-align: center;
+        }
+        .c2{
+            float:left;
+            height:400px;
+            width:240px;
+            position:relative;
+            background-color: rgb(213, 85, 43);
+            border:solid 2px black;
+            align-items: center;
+            margin-left: 100px;
+            text-align: center;
+            display:flex;
+        }
+        .c1 p:hover{
+            transform:scale(120%);
+            
+        }
+
+        .c2 p:hover{
+            transform:scale(120%);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="id">
+        <header>Again!!</header><br>
+        <div class="c1"><p onmouseover="change()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum in, ut sed ex incidunt quam ipsum eveniet odit mollitia, fugit aperiam eligendi quidem error optio expedita dolorum cumque exercitationem autem!</p></div>
+       <div class="c2"> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet culpa commodi sed enim. Ex tempore quas reprehenderit, iste, dolorum at officiis accusantium ut vero, delectus sint magni corrupti molestiae dolorem!</p></div>
+    
+    </div>
+    <script>
+
+//     document.getElementByClass("c1").addEventListener("mouseover", function() {
+//     document.getElementByClass("c1").style.backgroundColor = "white";
+// });
+ function change(){
+    document.getElementsByClassName("c1").style.backgroundColor = "yellow";
+ }
+    </script>
+</body>
+</html>

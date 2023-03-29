@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title>Week 2 exercise</title>
+</head>
+<body>
+	
+	<table border=3 bgcolor=yellow height=50% width=100%>
+		<tr>
+			<td align="center" colspan=4><b>FEEDBACK PAGE</b></td>
+		</tr>
+		<tr>
+			<td><label><b>Components of software product::</b></label></td>
+			<td><input type=checkbox name=design value=d/>Product design<br>
+			    <input type=checkbox name=function value=f/>Product functionality and feature<br>
+			<input type=checkbox name=content value=c/>Product Content
+ </td>
+		</tr>
+		<tr>
+			<td><label><b>Types Of Software Product::</label></b></td>
+			<td><input type=radio name=types value=generic/>Generic Software Product<br>
+			<input type=radio name=types value=customized />Customized Software Product</td>
+		</tr>
+		<tr>
+			<td><label><b>Use Software product::</b></label></td>
+			<td colspan=4><select  >
+				<option>Application Software</option>
+				<option>System Software</option>
+				<option>Programming Software</option>
+				<option>Driver Software</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td><label><b>Feedback::</b></label></td>
+			<td><textarea rows=2 cols=15>feedback</textarea></td>
+		</tr>
+		
+		<tr>
+			<td colspan=4 align=center><input type="submit"/></td>
+		</tr>
+		
+	</table>
+<hr><hr><hr><br>
+		<label>enter day::</label>
+		<input type="text" name="dayy" list="days" />
+		<datalist id="days">
+			<option value="sunday">Sunday</option>
+			<option value="Monday">Monday</option>
+			<option value="Tuesday">Tuesday</option>
+			<option value="Wednesday">Wednesday</option>
+			<option value="Thrusday">Thrusday</option>
+			<option value="Friday">Friday</option>
+			<option value="Saturday">Saturday</option>
+		</datalist>
+<hr><hr><hr><br>
+		<h1>QUIZ</h1>
+		<form>
+			<label>1. Which state government introduced a bill to enable public participation in various levels of municipal governance?</label><br>
+			<input type=radio name=state value=kerela /><small>Kerela</small><br>
+			<input type=radio name=state value=delhi /><small>delhi</small><br>
+			<input type=radio name=state value=telangana /><small>telangana</small><br>
+			<input type=radio name=state value=odissa /><small>odissa</small><br>
+
+			<label>2. What is a chemical formula for calcium chloride?</label><br>
+			<input type=radio name=chem value=cacloride /><small>CaCl<sub>2</sub></small><br>
+			<input type=radio name=chem value=mgcloride /><small>MgCl<sub>2</sub></small><br>
+			<input type=radio name=chem value=nacl /><small>NaCl</small><br>
+			<input type=radio name=chem value=basulphate /><small>BaSO<sub>4</sub></small><br>
+
+			<label>3. Formula for (a+b)<sup>2</sup>?</label><br>
+			<input type=radio name=formula value=k /><small>a<sup>2</sup>+b<sup>2</sup></small><br>
+			<input type=radio name=formula value=s /><small>a<sup>2</sup>+b<sup>2</sup>+2ab</small><br>
+			<input type=radio name=formula value=t/><small>a<sup>2</sup>+b<sup>2</sup>+ab</small><br>
+			<input type=radio name=formula value=w /><small>a<sup>2</sup>+b<sup>2</sup>+2ab<sup>2</sup></small><br>
+
+			<label>4.Which actor play the role of <i>'IronMan'</i> </label><br>
+			<input type=radio name=actor value=adam /><small>Adam Smith</small><br>
+			<input type=radio name=actor value=tom /><small>Tom Holand</small><br>
+			<input type=radio name=actor value=robert /><small>Robert J Drowny</small><br>
+			<input type=radio name=actor value=jonny /><small>Jonny Deep</small><br>
+			
+			<label>What answer will this function return?<br>
+                     <pre>function sum(a+b){
+	return a+b;
+}</pre>
+sum(7,9);
+<br><br>
+			<input type=radio name=ans value=12 /><small>12</small><br>
+			<input type=radio name=ans value=13 /><small>13</small><br>
+			<input type=radio name=ans value=14 /><small>14</small><br>
+			<input type=radio name=ans value=16 /><small>16</small><br>			
+</label>
+			<input type=submit />
+		</form>
+
+<hr><hr><hr><br>
+		<table border=3 height=50% width=50% >
+			<tr height=15%>
+				<td colspan=2 align=center>Header</td>
+                  </tr>
+			<tr height=80%>
+				<td width=15%>
+					<table border=0 height=100% width=100%>
+						<tr height=10% bgcolor="blue"><td><a href="#">BIO DATA</a></td></tr>
+						<tr  height=10% bgcolor="blue"><td><a href="#" >CONTACT</a></td></tr>
+						<tr height=10% bgcolor="blue"><td><a href="#">VIDEO</a></td></tr>
+						<tr height=10% bgcolor="blue"><td><a href="#">PHOTO</a></td></tr>
+						<tr height=10% bgcolor="blue"><td><a href="#">NOTES</a></td></tr>
+						<tr><td></td></tr>
+					</table>
+				</td>
+				<td align=center>content</td>
+                  </tr>
+			<tr height=5%>
+				<td colspan=2 align=center>footer</td>
+                  </tr>
+		</table>
+  <hr><hr><hr><br>
+	<form>
+		<label>Enter month</label>
+		<input type=search name=month>
+		<input type=submit />
+      </form>
+</body>
+</html>

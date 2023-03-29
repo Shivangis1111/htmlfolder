@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-2</title>
+    <style>
+  .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin:-12px; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#f9f1f1;
+  color: rgb(9, 1, 1);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8a8585;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fcf9f9;
+  color:rgb(12, 12, 12);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+        *{
+            margin:0;
+            padding:0;
+        }
+         .log2{
+            height: 50px;
+            width:100%;
+            background-color: black;
+         }
+         .logg2 ul{
+            list-style-type: none;
+            
+        }
+
+        .logg2 a:hover{
+            color:rgb(146, 44, 190);
+    
+        }
+
+        .logg1 a:hover{
+            color:red;
+    
+        }
+
+        .logg2 ul a{
+            text-decoration: none;
+            color:rgb(249, 248, 248);
+            font-size: 20px;
+            /* word-spacing: 6px; */
+        }
+
+        .logg2 ul li{
+            float:left;
+            margin-left:150px;
+            margin-top:14px;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        /* .container2{
+            float: right;
+        } */
+
+        .wrapper{
+    background: radial-gradient(#fcfafd, #e8e4eb);
+    padding: 0 20px 0 20px;
+}
+
+.container {
+ /* display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 5px; */
+ display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  background-color:#d982f9;
+  border: solid black 2px;
+ 
+}
+
+
+.container1 {
+  max-width: 100%;
+  max-height:100%;
+}
+
+.container2{
+  /* font-size: 70px; */
+  padding-left: 80px;
+ 
+}
+
+
+button{
+    height: 45px;
+    width: 100px;
+    background-color: rgb(233, 72, 99);
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 20px;
+   
+}
+
+button:hover{
+    transform: scale(1.2);
+}
+
+.container2 h1{
+    font-size: 40px;
+}
+
+.container2 button a{
+    text-decoration: none;
+    color: black;
+}
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <nav class="log2">
+        <div class="logg2">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#"><div class="dropdown">
+                    <button class="dropbtn">HTML
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="h1.html">Question-1</a>
+                      <a href="h2.html">Question-2</a>
+                      <a href="h3.html">Question-3</a>
+                      <a href="h4.html">Question-4</a>
+                      <a href="h5.html">Question-5</a>
+                      <a href="h6.html">Question-6</a>
+                      <a href="h7.html">Question-7</a>
+                      <a href="h8.html">Question-8</a>
+                      <a href="h9.html">Question-9</a>
+                      <a href="h10.html">Question-10</a>
+                      <a href="h11.html">Question-11</a>
+                      <a href="h12.html">Question-12</a>
+                      <a href="h13.html">Question-13</a>
+                      <a href="h14.html">Question-14</a>
+                    </div>
+                  </div></a></li>
+                  <li><a href="#"><div class="dropdown">
+                    <button class="dropbtn">CSS
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="css15.html">Question-15</a>
+                        <a href="css16.html">Question-16</a>
+                        <a href="css17.html">Question-17</a>
+                        <a href="css18.html">Question-18</a>
+                        <a href="css19.html">Question-19</a>
+                        <a href="css20.html">Question-20</a>
+                        <a href="css21.html">Question-21</a>
+                        
+                    </div>
+                  </div></a></li>
+                
+                
+                <li><a href="#"><div class="dropdown">
+                    <button class="dropbtn">JS
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="javascript22.html">Question-22</a>
+                        <a href="javascript23.html">Question-23</a>
+                        <a href="javascript24.html">Question-24</a>
+                        <a href="javascript25.html">Question-25</a>
+                        <a href="javascript26.html">Question-26</a>
+                        <a href="javascript27.html">Question-27</a>
+                        <a href="javascript28.html">Question-28</a>
+                        <a href="javascript29.html">Question-29</a>
+                        <a href="javascript31.html">Question-30</a>
+                    </div>
+                  </div></a></li>
+                  <li><a href="#">Contact Us</a></li>
+               
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+    <div class="container1">
+            <img src="images/softwaredevA2.gif" height="700px" width="96%">
+    </div>
+    <div class="container2">
+        <h1>Learn faster.. Stay motivated.. <br>Study smarter..</h1><br>
+        <h3 style="font-size: 30px;">Exercises on HTML, CSS, JAVASCRIPT</h3><br>
+        <button><a href="Week - 1 - Execises.pdf">Exercise on HTML</a></button>
+        <button><a href="Week - 03 - Execises.pdf">Exercise on CSS</a></button>
+        <button><a href="Week - 04- Execises (Java Script).pdf">Exercise on JAVASCRIPT</a></button>
+    </div>
+</div>
+
+
+</body>
+</html>

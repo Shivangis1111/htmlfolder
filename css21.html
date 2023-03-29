@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website 21 question</title>
+    <style>
+ .dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top:14px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin:-12px; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color:#f9f1f1;
+  color: rgb(9, 1, 1);
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8a8585;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  color: black;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #fcf9f9;
+  color:rgb(12, 12, 12);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+
+        *{
+            padding:0px;
+            margin:0px;
+        }
+
+     
+        .logg1 img{
+            height:100px;
+            width:100px;
+        }
+        .logg1 ul{
+            list-style-type: none;
+            margin-top:-40px;
+        }
+     
+        .logg1 ul a{
+                text-decoration: none;
+                
+        }
+        .logg1 ul li{
+            float:left;
+            /* padding:3px 3px;
+            margin:13px 20px; */
+            margin-left:40px;
+           
+            /* margin-top: 5px; */
+        }
+
+         .log2{
+            height: 50px;
+            width:100%;
+            background-color: black;
+         }
+         .logg2 ul{
+            list-style-type: none;
+            
+        }
+
+        .logg2 a:hover{
+            color:rgb(146, 44, 190);
+    
+        }
+
+        .logg1 a:hover{
+            color:red;
+    
+        }
+
+        .logg2 ul a{
+            text-decoration: none;
+            color:rgb(249, 248, 248);
+            font-size: 20px;
+            /* word-spacing: 6px; */
+        }
+
+        .logg2 ul li{
+            float:left;
+            margin-left: 115px;
+            margin-top:14px;
+            font-weight: bold;
+        }
+      .container {
+        background-size: cover;
+      }
+      .container img {
+        width:100%;
+        height:590px;
+      }
+
+      .container .cont {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);/* Fallback color */
+        background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+        color: #ffffff;
+        width: 35%;
+        height: 350px;
+        padding: 120px;
+        text-align:left;
+        float:right;
+      }
+
+      .container .cont p{
+        font-size:x-large;
+      }
+
+      .cont button{
+        height: 40px;
+        width:150px;
+        border-color:white;
+        color: white;
+        background-color:rgb(8, 7, 7,0.6);
+      }
+        
+      .cont button:hover{
+        transform: scale(1.2);
+      }
+
+    </style>
+</head>
+<body>
+    <nav class="log">
+    <div class="logg1">
+        <table>
+        <tr>
+            <td><img src="images/Banasthali_Vidyapeeth_Logo (1).png"></td>
+            <td><h2>Banasthali vidyapith<br>
+                <i>University for Women,University with a difference.....</i></h2></td>
+            <td>
+            <td><img src="images/depositphotos_202550274-stock-illustration-years-black-anniversary-logo-decorative.jpg"></td>
+            <td>
+                <ul>
+                    <li><a href="#">News&Events</a></li>
+                    <li><a href="#">International</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Placements</a></li>
+                    <li><a href="#">Alumni</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul>
+            </td>
+            
+    </tr>
+    </table>
+    </div>
+</nav>
+<nav class="log2">
+    <div class="logg2">
+        <ul>
+            <li><a href="#"><div class="dropdown">
+                <button class="dropbtn">About Us
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">History</a>
+                  <a href="#">Staff</a>
+                  <a href="#">Contact</a>
+                </div>
+              </div></a></li>
+              <li><a href="#"><div class="dropdown">
+                <button class="dropbtn">Academics
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Advising</a>
+                  <a href="#">Teaching</a>
+                  <a href="#">Academic Programs</a>
+                  <a href="#">Commencement</a>
+                  <a href="#">Poloices</a>
+                </div>
+              </div></a></li>
+            <li><a href="#">Research</a></li>
+            <li><a href="#">Campus & Facilities</a></li>
+            <li><a href="#"><div class="dropdown">
+                <button class="dropbtn">Admissions
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Apply</a>
+                  <a href="#">Admissions Policies</a>
+                  <a href="#">Completing Your Application</a>
+                  <a href="#">After Appying</a>
+                  <a href="#">Tuition&Fees</a>
+                </div>
+              </div></a></li>
+            <!-- <li><a href="#">School Education</a></li> -->
+            <li><a href="#">School Education</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <img src="images/maxresdefault.jpg">
+    <div class="cont">
+        <h3>VIDEO</h2>
+        <h1>INTRODUCING BANASTHALI VIDYAPITH</h1><br>
+        <p>This video shows the beauty of Banasthali and how there is unity in diversity...</p><br>
+        <button>WATCH NOW</button> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 29</title>
+    <style>
+        .container{
+            background-color: rgb(183, 242, 222);
+            height:600px;
+            padding:30px 30px 30px 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 30px;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        h1{
+            text-align: center;
+            color: brown;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        button{
+            height:40px;
+            width: 60px;
+            background-color: blue;
+            color: white;
+            border-radius: 9px;
+        }
+        input{
+            width:1360px;
+            height:24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form name="f1">
+        <h1> Registration form </h1>
+        <label>First Name</label><br>
+        <input type="text" name="fname"><br>
+        <label>Last Name</label><br>
+        <input type="text" name="lname"><br>
+        <labe>UserId</labe><br>
+        <input type="text" name="username"><br>
+        <label>Password</label><br>
+        <input type="password" name="password"><br>
+        <label>Confirm password</label><br>
+        <input type="password" name="cpassword"><br>
+        <label>Address</label><br>
+        <input type="text" name="address"><br>
+        <label>E-mail Id</label><br>
+        <input type="email" name="email"><br>
+        <label>Contact number</label><br>
+        <input type="number" name="contactnumber"><br><br>
+        <!-- <input type="submit" value="submit"> -->
+        <button onclick="check()">Submit</button>   
+    </form><br>
+    <!-- <button onsubmit="check()">Submit</button>    -->
+    
+</div>
+<script>
+    x=document.f1.fname.value;
+    y=document.f1.lname.value;
+    str1=document.f1.password.value;
+    str2=document.f1.cpassword.value;
+
+    function check(){
+        if(x==""){
+        alert("first name must be filled");
+    }
+    else if(str1==""){
+        alert("enter password");
+    }
+    else if(str1==str2){
+        alert("Password is incorrect");
+    }
+    
+    
+
+</script>
+</body>
+</html>

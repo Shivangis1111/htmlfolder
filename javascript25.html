@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 29</title>
+    <style>
+        .container{
+            background-color: rgb(183, 242, 222);
+            height:600px;
+            padding:30px 30px 30px 30px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 30px;
+            font-size: 20px;
+            color: black;
+            font-weight: bold;
+        }
+
+        h1{
+            text-align: center;
+            color: brown;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+
+        button{
+            height:40px;
+            width: 60px;
+            background-color: blue;
+            color: white;
+            border-radius: 9px;
+        }
+        input{
+            width:1360px;
+            height:24px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form name="f1" onsubmit=" return check()">
+        <h1> Registration form </h1>
+        <label>First Name</label><br>
+        <input id="fn"  type="text" name="fname"><br>
+        <label>Last Name</label><br>
+        <input  id="ln" type="text" name="lname"><br>
+        <labe>UserId</labe><br>
+        <input  id="user_id" type="text" name="username"><br>
+        <label>Password</label><br>
+        <input  id="ps" type="password" name="password"><br>
+        <label>Confirm password</label><br>
+        <input  id="cps" type="password" name="cpassword"><br>
+        <label>Address</label><br>
+        <input  id="ad" type="text" name="address"><br>
+        <label>E-mail Id</label><br>
+        <input  id="em" type="text" name="email"><br>
+        <label>Contact number</label><br>
+        <input  id="cn" type="number" name="contactnumber"><br><br>
+        <!-- <input type="submit" value="submit"> -->
+        <button type="submit">Submit</button>   
+    </form><br>
+    <!-- <button onsubmit="check()">Submit</button>    -->
+    
+</div>
+<script>
+   function check(){
+   fname=document.getElementById('fn').value;
+   lname=document.getElementById('ln').value;
+   usename=document.getElementById('user_id').value;
+   password=document.getElementById('ps').value;
+   cpassword=document.getElementById('cps').value;
+   address=document.getElementById('ad').value;
+   email=document.getElementById('em').value; 
+   contactnumber=document.getElementById('cn').value;
+   fistn= /^[a-z]{2,}$/i;
+   lastn=/^[a-z]{2,30}$/i;
+   usern=/^[a-zA-Z]{5}[0-9]{5}$/i;
+   contno=/^[1-9][0-9]{9}$/;
+   add=address.length;
+   e=/^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+   pass=/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[1-A-Za-z0-9]).{8,16}$/;
+
+   if(fistn.test(fname)==false){
+    alert("please enter valid first name");
+    return false;
+   }
+  else if(lastn.test(lname)==false){
+    alert("please enter valid last name");
+    return false;
+   }
+   else if(usern.test(username)==false){
+    alert("enter valid userID");
+    return false;
+   }
+   else if(contactnumber.test(contno)==false){
+    alert("enter valid phone number");
+    return false;
+   }
+   else if(e.test(email)==false){
+    alert("enter valid email id");
+    return false;
+   }
+   else if(password!=cpassword){
+        alert("enter confirm password");
+        return false;
+   }
+   else if(pass.test(password)==false){
+    alert("password invalid");
+    return false;
+   }
+   else{
+    return true;
+   }
+   }
+</script>
+</body>
+</html>

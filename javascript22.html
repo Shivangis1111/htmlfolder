@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display:flex;
+            /* float:left; */
+        }
+
+        .inner{
+            color:black;
+            font-size:40px;
+            width:100px;
+            height:100px;
+            border:solid 1px black;
+            text-align:center;
+            font-weight:800;
+        }
+
+        #inner1{
+            background-color: black;
+        }
+
+        #inner2{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        m=parseInt(prompt("enter the number if  rows:"));
+        n=parseInt(prompt("enter the number of columns:"));
+        for(i=1;i<=m;i++)
+        {
+            document.write("<div class=container>");
+            for(j=1;j<=n;j++)
+            {
+                if((i+j)%2==0)
+                {
+                    document.write("<div class=inner id=inner1></div>");
+                 }
+                    else
+                    {
+                        document.write("<div class=inner id=inner2></div>");
+                    }
+                }
+            document.write("</div>");
+        }
+    </script>
+</body>
+</html>

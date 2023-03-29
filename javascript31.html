@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Guess the Number!</title>
+<style>
+   body{
+    background-image: linear-gradient(25deg,rgba(0,0,0),rgba(239, 186, 133, 0.5)),url("images/10.jpeg");
+    background-size: cover;
+   }
+
+    .container{
+            height:300px;
+            width:700px;
+            background-color: rgb(58, 226, 43);
+            margin:365px;
+            margin-top: 250px;
+            padding: 30px;
+            border:20px solid rgb(239, 186, 133);
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    button{
+        background-color: rgb(186, 54, 76);
+        height: 30px;
+        width:100px;
+        border-radius: 5px;
+        color: white;
+    }
+
+    label{
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    button:hover{
+        transform: scale(1.2);
+        background-color:darkorchid;
+    }
+</style>
+<script type="text/javascript">
+  var number = generateNewValue();
+  
+  function generateNewValue(){
+    return Math.floor(1000*Math.random())+1;
+  }
+  
+  function guess(){
+    if (document.getElementById("playerNumber").value == undefined || document.getElementById("playerNumber").value.trim() == "" || isNaN(document.getElementById("playerNumber").value)){
+      alert("Please type a number");
+      document.getElementById("playerNumber").focus();
+      return false;
+    }
+    if (parseInt(document.getElementById("playerNumber").value) > number){
+      alert("Too high\n\nTry again.");
+    }else if (parseInt(document.getElementById("playerNumber").value) < number){
+      alert("Too low\n\nTry again.");
+    }else{
+      alert("Congratulations!!\n\nYou guessed the number.");
+      number = generateNewValue();
+    }
+    document.getElementById("playerNumber").value = "";
+    document.getElementById("playerNumber").focus();
+  }
+</script>
+</head>
+<body>
+  <div class="container">
+    <h2>Guess the number between 1 and 1000!!</h2>
+  <hr><br>
+  <div id="histogram">
+    <label for="playerNumber" accesskey="n">Enter a number</label><br> <input type="number" id="playerNumber" value="" size="10"><br><br>
+    <button onclick="guess()">SUBMIT</button>
+  </div>
+  </div>
+</body>
+</html>

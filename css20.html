@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>biodata</title>
+    <style>
+        *{
+             padding: 0px;
+             margin: 0px;
+             box-sizing: border-box;
+         }
+
+        nav{
+            height:90px;
+            width:100%;
+            background-color: rgb(43, 19, 53);
+            position:relative;
+        }
+
+        nav ul li{
+            list-style-type: none;
+            float:left;
+            margin-left: 150px;
+            margin-top: 45px;
+            word-spacing:8px;
+        }
+
+        ul li a{
+            text-decoration: none;
+            list-style: none;
+            color:white;
+            font-size:22px;
+            
+        }
+        .p1{
+            height:600px;
+            width:100%;
+            background-size: cover;
+            background-image: linear-gradient(45deg,rgba(91, 203, 177, 0.6),rgba(204, 151, 97, 0.5)),url("images/2.jpeg");
+            border:2px solid rgb(48, 6, 6);
+        }
+
+        .p2{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(205, 23, 138,0.8);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(78, 26, 26);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%, 25%);  
+        }
+
+        .p2 h1{
+           padding:20px;
+           text-align: left;
+           margin-left: 120px;
+           font-size: 38px;
+           font-family: 'Times New Roman', Times, serif;
+        }
+
+        .p2 p{
+           text-align:left;
+           margin-left: 140px;
+           font-size: 30px;
+           font-family: 'Times New Roman', Times, serif;
+        }
+        div .profile{
+            height:600px;
+            width:100%;
+            background-image: linear-gradient(45deg,rgba(252, 140, 140, 0.5),rgba(204, 151, 97, 0.5)),url("images/10.jpeg");
+            position: relative; 
+            border:2px solid rgb(48, 6, 6);
+            background-size: cover;
+        }
+
+       .profile1{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(238, 161, 210,0.8);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(78, 26, 26);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%, 25%); 
+        }
+
+         .education{
+            height:600px;
+            width:100%;
+            background-color: rgb(220, 52, 183);
+            position: relative;
+            background-image: linear-gradient(45deg,rgba(212, 239, 153, 0.5),rgba(204, 151, 97, 0.5)),url("images/11.jpeg");
+            border:2px solid rgb(50, 7, 7);
+            background-size: cover;
+        }
+
+       .edu1{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(149, 232, 67,0.8);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(25, 6, 6);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%,25%); 
+        }
+
+        .skill{
+            height:600px;
+            width:100%;
+            background-color: rgb(231, 243, 19);
+            position: relative; 
+            background-image: linear-gradient(45deg,rgba(63, 186, 147, 0.5),rgba(204, 151, 97, 0.5)),url("images/12.jpeg");
+            border:2px solid rgb(51, 7, 7);
+            background-size: cover;
+        }
+
+       .skill1{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(203, 110, 23,0.8);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(44, 42, 42);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%,25%); 
+        }
+
+        .ach{
+            height:600px;
+            width:100%;
+            background-color: rgb(61, 216, 234);
+            position: relative; 
+            background-image: linear-gradient(45deg,rgba(138, 145, 246, 0.5),rgba(204, 151, 97, 0.5)),url("images/13.jpeg");
+            border:2px solid rgb(44, 4, 4);
+            background-size: cover;
+            
+        }
+
+       .ach1{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(225, 220, 49,0.8);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(61, 25, 5);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%,25%); 
+        }
+
+        .personald{
+            height:600px;
+            width:100%;
+            /* background-color: rgb(61, 216, 234); */
+            position: relative; 
+            background-image: linear-gradient(45deg,rgba(173, 248, 243, 0.5),rgba(240, 194, 148, 0.5)),url("images/18.jpeg");
+            border:2px solid rgb(44, 4, 4);
+            background-size: cover;
+            
+        }
+
+       .personald1{
+            margin-left: 150px;
+            margin-right: 150px;
+            /* margin-top: 45px; */
+            margin-bottom: 45px; 
+            border-radius: 30px;
+            padding: 40px;
+            height:400px;
+            width:80%;
+            background-color: rgb(89, 236, 190,0.7);
+            font-family: Space Mono,monospace,sans-serif;
+            line-height: 30px;
+            word-spacing: 2px;
+            border: 15px solid rgb(61, 25, 5);
+            align-content: center;
+            position: absolute; 
+            transform: translate(3%,25%); 
+        }
+        h2{
+            font-size: 30px;
+            text-align: center;
+            color:rgb(46, 77, 251);
+            text-decoration: underline;
+        }
+
+        .profile1 p{
+            font-size:22px;
+            font-weight: bold;
+        }
+
+        .edu1 p{
+            font-size:22px;
+            font-weight: bold;
+        }
+
+        .skill1 p{
+            font-size:22px;
+            font-weight: bold;
+        }
+
+        .ach1 p{
+            font-size:22px;
+            font-weight: bold;
+        }
+
+        .personald1 p{
+            font-size:28px;
+            font-weight: bold;
+            line-height: 44px;
+        }
+
+        img{
+            height:180px;
+            width:120px;
+            border:solid 5px rgb(56, 7, 7);
+            border-radius: 40px;
+            float:left;
+            /* margin:39px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#profile">PROFILE</a></li>
+                 <li><a href="#education">EDUCATION</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#achievements">ACHIEVEMENTS</a></li>
+                 <li><a href="#personal details">PERSONAL DETAILS</a></li>
+            </ul>
+        </nav>
+        <div class="p1">
+            <div class="p2">
+                <img src="images\Screenshot (250).png">
+                <h1>SHIVANGI SHARMA</h1>
+                <p>B. Tech 3rd year</p>
+            </div>
+        </div>
+        <div class="profile">
+            <div class="profile1">
+                <a name="profile"><h2>PROFILE</h2></a><br>
+                <p>A highly motivated student who is keen to learn new things on the way. My interest in Information Technology is supplemented with
+                    leadership, team work and communication skills, which I have demonstrate throughout my academic career. I’ve always loved spending way too much time on the computer.I am very confident, self
+                    initiative and energetic to execute multi-task assignments and always focus on my goals without ignoring values in life. </p>
+        </div>
+        </div>
+        <div class="education">
+            <div class="edu1">
+                <a name="education"><h2>EDUCATION</h2></a><br>
+                <p>I have completed my 10th standared from St. Anns Senior Secondary School, Roorkee where i scored 95% in session 2017-2018 and I have completed my 12th standared from St. Anns Senior Secondary School, Roorkee where i scored 94% in session 2019-2020.and now i am doing by graduation from Banasthali Vidyapith in course of B.tech from the branch Information Technology and i have scored 9.45 which is highest in all.</p>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="skill1">
+                <a name="skills"><h2>SKILLS</h2></a><br>
+                <p>i have been skilled in many programming language like C++, C (Programming Language), Java,JavaScript. skilles include Database Management System(DBMS), SQL, Object Oriented Programming, HTML, Data Structure And Algorithms, PPT Designing, Cascading Style Sheet(CSS).Many other skills that include Communication skill in which English(Professional Working Proficiency) and Hindi(Native or Bilingual Proficiency), Leadership,and Management skills.</p>
+            </div>
+        </div>
+        <div class="ach">
+            <div class="ach1">
+                <a name="achievements"><h2>ACHIEVEMENTS</h2></a><br>
+                <p>5 star at C++ on HackerRank. scored good rank in programming contests on HackerRank and
+                    became a 5 star. Completed All levels of Abacus. scored highest position in all(1-8)Levels. Participated in hackathon challenges.
+                    Participated and won number of debates and
+                    presentations in school.
+                    Participated and won inter school basketball
+                    championship.</p>
+            </div>
+        </div>
+        <div class="personald">
+            <div class="personald1">
+                <a name="personal details"><h2>PERSONAL DETAILS</h2></a><br>
+                <p>CONTACT NUMBER:987654321<br>Linkedin link:linkedin.com/in/shivangi-sharma-042607233<br>E-mail Id:shivangisharma110204@gmail.com<br></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

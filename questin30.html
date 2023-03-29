@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guess the number</title>
+</head>
+
+<body>
+    <form>
+        <h1>guess the number between 1 and 100</h1>
+        <h3>enter the number</h3>
+        <input type="number"><br><br>
+       
+    </form>
+    <button onclick="check()">SUBMIT</button>
+    <script>
+        x = Math.floor((Math.random() * 100) + 1);
+        console.log(x);
+
+        function check() {
+            n = document.forms[0].elements[0].value;
+            if (n > x) {
+                alert("Too High!! Try again!!");
+            }
+            else if (n < x) {
+                alert("Too Low!! Try again!!");
+            }
+            else if (n == x) {
+                alert("congratulations!! You guess the right number!!");
+            }
+            else {
+                alert("Error!!");
+            }
+            document.forms[0].elements[0].value=" "
+        }
+
+
+    </script>
+</body>
+
+</html>

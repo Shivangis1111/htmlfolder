@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .container{
+            height:100px;
+            width:100px;
+            position:absolute;
+            background-color: black;
+            animation-name: shivangi;
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+            animation-direction:normal;
+            animation-delay:2s;
+        }
+        @keyframes shivangi
+        {
+            from{
+                top:0;
+                left:0;
+            }
+            25%{
+                top:0;
+                left:400px;
+            }
+            50%{
+                top:400px;
+                left:400px;
+            }
+            75%{
+                top:400px;
+                left:0;
+            }
+            to{
+                top:0;
+                left:0;
+            }
+        }
+
+
+        .inner{
+            height:160px;
+            width:160px;
+            background-color: yellowgreen;
+            animation-name:shivi;
+            animation-duration:5s;
+            animation-delay:1s;
+            animation-iteration-count:3;
+            animation-direction:normal;
+            position:absolute;
+        }
+        img{
+            padding:19px;
+        }
+
+        .inner:hover{
+            /* transform:scale(1.2);
+            transition: 2s; */
+            /* transform:rotate(45deg) scale(1.5); */
+            transform:skew(25deg) scale(1.2);
+        }
+
+        @keyframes shivi{
+            from{
+                top:0px;
+                left:0px;
+            }
+             to{
+                top:0px;
+                left:400px;
+             }
+            
+        }
+
+        nav{
+            height:100px;
+            background-color: black;
+        }
+
+        nav ul{
+            list-style-type:none;
+            display:flex;
+            flex-direction:row;
+           
+        }
+
+        nav ul li{
+            color: white;
+            font-weight: bolder;
+            margin:45px;
+            /* float:left; */
+        }
+    </style>
+</head>
+<body>
+    <!-- <p>shivangi sharma</p> -->
+    <!-- <div class="container"></div> -->
+    <!-- <div class="inner"><img src="images/10.jpeg" height="120px" width="120px"/></div> -->
+
+    <nav>
+        <ul>
+            <li>shivi</li>
+            <li>shruti</li>
+            <li>shrestha</li>
+            <li>shivangi</li>
+        </ul>
+    </nav>
+</body>
+</html>
